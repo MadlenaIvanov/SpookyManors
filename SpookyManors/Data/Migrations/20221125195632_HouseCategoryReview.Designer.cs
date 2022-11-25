@@ -12,8 +12,8 @@ using SpookyManors.Data;
 namespace SpookyManors.Data.Migrations
 {
     [DbContext(typeof(SpookyManorsDbContext))]
-    [Migration("20221123201429_HouseAndCategoryTables")]
-    partial class HouseAndCategoryTables
+    [Migration("20221125195632_HouseCategoryReview")]
+    partial class HouseCategoryReview
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -236,11 +236,13 @@ namespace SpookyManors.Data.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
+                        .HasMaxLength(5000)
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
 
                     b.HasKey("Id");
 
@@ -282,6 +284,29 @@ namespace SpookyManors.Data.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Houses");
+                });
+
+            modelBuilder.Entity("SpookyManors.Data.Models.Review", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasMaxLength(5000)
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Reviews");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
