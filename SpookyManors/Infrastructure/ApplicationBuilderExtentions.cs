@@ -16,5 +16,7 @@ namespace SpookyManors.Infrastructure
 
             return app;
         }
+
+
     }
 }
