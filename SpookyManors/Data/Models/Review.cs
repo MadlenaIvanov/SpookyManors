@@ -5,6 +5,12 @@ namespace SpookyManors.Data.Models
 {
     public class Review
     {
+        //people can review their experiences
+        //they can be logged in or not
+        //if they are logged in - take their name
+        //if not let them write their own name 
+        //maybe upload a picture - not required
+
         public int Id { get; init; }
 
         [Required]
@@ -14,5 +20,7 @@ namespace SpookyManors.Data.Models
         [Required]
         [MaxLength(ReviewCommentMaxLength)]
         public string Comment { get; set; }
+
+        public string ImageUrl { get; set; }
     }
 }

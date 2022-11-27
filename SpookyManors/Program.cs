@@ -22,6 +22,9 @@ builder.Services
     .AddEntityFrameworkStores<SpookyManorsDbContext>();
 builder.Services.AddControllersWithViews();
 
+//need to add facebook/google register/log in
+
+
 var app = builder.Build();
 
 app.PrepareDatabase();

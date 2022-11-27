@@ -13,7 +13,6 @@ namespace SpookyManors.Infrastructure
 
             services.Database.Migrate();
 
-
             return app;
         }
 
