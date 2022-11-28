@@ -28,6 +28,7 @@ namespace SpookyManors.Data.Models
         public Category Category { get; init; }
 
 
+        public DateTime DateTime { get; set; }
 
 
 

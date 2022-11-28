@@ -24,5 +24,8 @@ namespace SpookyManors.Data.Models
 
         [Required]
         public string Hours { get; set; }
+
+        public DateTime DateTime { get; set; }
+
     }
 }
