@@ -13,9 +13,20 @@ namespace SpookyManors.Infrastructure
 
             services.Database.Migrate();
 
+            SeedCategories(services);
+
             return app;
         }
 
+        private static void SeedCategories(SpookyManorsDbContext services)
+        {
 
+            if (services.Categories.Any())
+            {
+                return;
+            }
+        }
     }
+
+
 }
