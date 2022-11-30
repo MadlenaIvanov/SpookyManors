@@ -18,6 +18,7 @@ namespace SpookyManors.Infrastructure
             return app;
         }
 
+
         private static void SeedCategories(SpookyManorsDbContext services)
         {
 

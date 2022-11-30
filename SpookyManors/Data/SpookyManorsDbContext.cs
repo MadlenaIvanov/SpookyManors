@@ -16,6 +16,7 @@ namespace SpookyManors.Data
         public DbSet<Review> Reviews { get; init; }
         public DbSet<Service> Services { get; init; }
         public DbSet<Product> Products { get; init; }
+        public DbSet<Guide> Guides { get; init; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
