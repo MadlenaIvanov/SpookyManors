@@ -12,5 +12,9 @@
         public const int ReviewNameMaxLength = 40;
         public const int ReviewCommentMaxLength = 5000;
 
+
+        public const int GuideNameMaxLength = 40;
+        public const int GuideDescriptionMaxLength = 5000;
+
     }
 }
