@@ -1,4 +1,6 @@
-﻿namespace SpookyManors.Data.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SpookyManors.Data.Models
 {
     public class Guest
     {
