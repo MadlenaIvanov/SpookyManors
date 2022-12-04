@@ -19,6 +19,7 @@ namespace SpookyManors.Data
         public DbSet<Guide> Guides { get; init; }
         public DbSet<Guest> Guests { get; init; }
         public DbSet<Employee> Employees { get; init; }
+        public DbSet<Schedule> Schedules { get; init; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
