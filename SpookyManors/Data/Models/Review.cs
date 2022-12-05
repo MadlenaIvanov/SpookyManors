@@ -24,5 +24,9 @@ namespace SpookyManors.Data.Models
         public string ImageUrl { get; set; }
 
         public DateTime DateTime { get; set; }
+
+        public int ProductId { get; set; }
+
+        public Product Product { get; init; }
     }
 }

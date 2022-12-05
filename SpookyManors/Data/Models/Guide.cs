@@ -25,5 +25,8 @@ namespace SpookyManors.Data.Models
         public string Description { get; set; }
 
         //add houses they work in
+
+        public IEnumerable<Guest> Guests { get; set; }
+
     }
 }

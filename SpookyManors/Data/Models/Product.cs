@@ -17,5 +17,8 @@ namespace SpookyManors.Data.Models
 
         [Required]
         public string ImageUrl { get; set; }
+
+        public IEnumerable<Product> Products { get; set; }
+
     }
 }

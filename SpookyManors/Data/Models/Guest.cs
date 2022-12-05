@@ -14,5 +14,9 @@ namespace SpookyManors.Data.Models
 
         [Required]
         public string Gender { get; set; }
+
+        public int GuideId { get; set; }
+
+        public Guide Guide { get; init; }
     }
 }
