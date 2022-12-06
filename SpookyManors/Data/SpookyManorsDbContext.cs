@@ -20,6 +20,7 @@ namespace SpookyManors.Data
         public DbSet<Guest> Guests { get; init; }
         public DbSet<Employee> Employees { get; init; }
         public DbSet<Schedule> Schedules { get; init; }
+        public DbSet<Archive> Archives { get; init; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)

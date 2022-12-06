@@ -19,7 +19,11 @@
         public const int GuideNameMinLength = 2;
         public const int GuidePhoneMinLength = 6;
         public const int GuidePhoneMaxLength = 30;
-               
+
+        public const int ArchiveHouseTitleMaxLength = 50;
+        public const int ArchiveHouseAddressMaxLength = 40;
+        public const int ArchiveHouseDescriptionMaxLength = 5000;
+
 
     }
 }
