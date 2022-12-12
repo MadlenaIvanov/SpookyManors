@@ -17,5 +17,8 @@ namespace SpookyManors.Data.Models
 
         public IEnumerable<House> Houses { get; set; }
 
+        public string Comment { get; set; }
+
+
     }
 }

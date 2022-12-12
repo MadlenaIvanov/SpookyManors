@@ -11,5 +11,8 @@ namespace SpookyManors.Data.Models
 
         [Required]
         public DateTime Date { get; set; }
+        public string Comment { get; set; }
+
+
     }
 }

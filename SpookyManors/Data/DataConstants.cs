@@ -24,6 +24,10 @@
         public const int ArchiveHouseAddressMaxLength = 40;
         public const int ArchiveHouseDescriptionMaxLength = 5000;
 
+        public const int ArchiveNameMinLength = 2;
+        public const int ArchivePhoneMinLength = 6;
+        public const int ArchivePhoneMaxLength = 30;
+
 
     }
 }

@@ -23,5 +23,8 @@ namespace SpookyManors.Data.Models
         public string ImageUrl { get; set; }
 
         public DateTime DateTime { get; set; }
+
+        public string Comment { get; set; }
+
     }
 }
