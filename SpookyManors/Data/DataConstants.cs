@@ -28,6 +28,10 @@
         public const int ArchivePhoneMinLength = 6;
         public const int ArchivePhoneMaxLength = 30;
 
+        public const int PropertyNameMinLength = 20;
+        public const int PropertyDescriptionMinLength = 500;
+        public const int SizePhoneMaxLength = 1000;
+
 
     }
 }
