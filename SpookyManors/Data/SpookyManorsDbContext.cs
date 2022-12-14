@@ -24,6 +24,7 @@ namespace SpookyManors.Data
         public DbSet<Owner> Owner { get; init; }
         public DbSet<Case> Cases { get; init; }
         public DbSet<History> Histories { get; init; }
+        public DbSet<Condition> Conditions { get; init; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
